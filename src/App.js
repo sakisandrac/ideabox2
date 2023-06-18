@@ -4,7 +4,7 @@ import Quotebox from './components/Quotebox/Quotebox';
 
 const App = () => {
 
-  const [quote, setQuote] = useState("");
+  const [quote, setQuote] = useState([{content: '... loading quote'}]);
 
   return (
     <div className="App">

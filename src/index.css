@@ -4,3 +4,7 @@
   height: 200px;
   border-radius: 24px;
 }
+
+.saved-quotes-container {
+  display: flex;
+}
