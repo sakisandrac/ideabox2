@@ -1,10 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  }
+
+.App {
+  background-image: url('../public/background.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Nunito', sans-serif;
+}
+.main-header {
+  margin: 20px;
+}
+
+.quote-container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .quote-box {
   border: 2px solid rgb(193, 193, 193);
-  width: 300px;
-  height: 200px;
+  background-color: rgba(245, 249, 251, 0.17);
+  max-width: 400px;
+  min-height: 200px;
+  width: 70%;
+  height: 30%;
   border-radius: 24px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.quote-btn {
+  padding: 10px;
+  border-radius: 24px;
+  border: none;
+  background-color: rgb(154, 230, 230);
+}
+
+.btn-container {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.saved-quotes-wrapper {
+  background-color: rgba(250, 250, 250, 0.245);
+  border-radius: 24px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .saved-quotes-container {
   display: flex;
+  flex-direction: column;
+}
+
+.saved-quotes-heading {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.quote-text {
+  margin: 7px;
 }

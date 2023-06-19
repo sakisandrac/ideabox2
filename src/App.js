@@ -8,7 +8,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Quote of the Day</h1>
+      <h1 className='main-header'>Quote of the Day</h1>
       <Quotebox quote={quote} setQuote={setQuote}/>
     </div>
   );

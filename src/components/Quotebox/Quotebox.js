@@ -29,18 +29,19 @@ const Quotebox = ({quote, setQuote}) => {
   }
   
   const saveQuote = () => {
-    console.log(quote.id)
-    console.log(savedQuotes)
+
     const saved = savedQuotes.content.some(q => {
-      return q.id === quote.id
+      return q._id === quote[0]._id
     })
-    console.log(saved)
-    setSavedQuotes(prev => {
-      return {
-        ...prev,
-        content: [...prev.content, quote[0]]
-      }
-    })
+
+    if (!saved) {
+      setSavedQuotes(prev => {
+        return {
+          ...prev,
+          content: [...prev.content, quote[0]]
+        }
+      })
+    }
   }
 
   const showSavedQuotes = () => {
@@ -55,10 +56,12 @@ const Quotebox = ({quote, setQuote}) => {
   return (
     <div className='quote-container'>
       <SingleQuote quote={quote}/>
-      <button className='quote-btn' onClick={getNewQuote}>New Quote</button>
-      <button className='quote-btn' onClick={saveQuote}>Save Quote</button>
-      <button onClick={showSavedQuotes}>{savedQuotes.showingQuotes ? "Hide" : "Show" } Saved Quotes</button>
-      {savedQuotes.showingQuotes && <SavedQuotes savedQuotes={savedQuotes}/>}
+      <div className='btn-container'>
+        <button className='quote-btn' onClick={getNewQuote}>New Quote</button>
+        <button className='quote-btn' onClick={saveQuote}>Save Quote</button>
+        <button className='quote-btn' onClick={showSavedQuotes}>{savedQuotes.showingQuotes ? "Hide" : "Show"} Saved Quotes</button>
+      </div>
+      {savedQuotes.showingQuotes && <SavedQuotes savedQuotes={savedQuotes} />}
     </div>
   )
 }
