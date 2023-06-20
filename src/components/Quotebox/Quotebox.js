@@ -20,10 +20,6 @@ const Quotebox = ({quote, setQuote}) => {
     .catch(err => console.log(err))
   }, [clicks])
 
-  useEffect(() => {
-    // console.log(savedQuotes)
-  }, [savedQuotes])
-
   const getNewQuote = () => {
     setClicks(prev => prev + 1);
   }
