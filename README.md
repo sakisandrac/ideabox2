@@ -11,7 +11,7 @@ React, create-react-app, CSS, HTML, JavaScript
 At the time of this project, I am a student at Turing School of Software Engineering in the front end development program, in mod 2. This is a project that I did in my own time, in order to prepare for our lesson on learning React in mod 3. This project was a way for me to practice and apply concepts that I learned such as writing components, organizing files in a structure, using hooks, setting state, and fetching data from an API with React.
 
 ## Project Preview
-<img width="700" alt="Screenshot 2023-06-04 at 10 05 40 PM" src="https://github.com/sakisandrac/ideabox2/assets/118419729/5a8f0637-4b1d-4c5b-bd3c-0f8707099d7d">
+<img width="700" alt="Screenshot 2023-06-04 at 10 05 40 PM" src="https://github.com/sakisandrac/ideabox2/assets/118419729/aacf7b95-b1ca-4508-9d1c-2341f18ae3a4">
 
 ## Set up
 1. Fork or clone down this respository. 
